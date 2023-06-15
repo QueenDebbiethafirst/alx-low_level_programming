@@ -5,14 +5,14 @@
  *
  * Description: Prints the message "Programming is like building a
  *              multilingual puzzle" using the puts function.
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char message[] = "Programming is like building a multilingual puzzle";
+	char message[] = "Programming is like building a multilingual puzzle";
 
-    puts(message);
+	puts(message);
 
-    return 0;
+	return (0);
 }
 
