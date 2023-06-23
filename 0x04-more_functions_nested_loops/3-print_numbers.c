@@ -1,16 +1,15 @@
-#include "main.h"
+#include <unistd.h>
+
 /**
-* print_numbers - print 0-9
-* return: void
-*/
+ * print_numbers - Prints the numbers from 0 to 9.
+ *
+ * Return: void
+ */
 void print_numbers(void)
 {
-char c;
-for (c = '0'; c <= '9'; c++)
-{
-_putchar(c);
+	char numbers[] = "0123456789";
+	size_t size = sizeof(numbers) - 1;
 
+	write(STDOUT_FILENO, numbers, size);
+	write(STDOUT_FILENO, "\n", 1);
 }
-_putchar('\n');
-}
-
