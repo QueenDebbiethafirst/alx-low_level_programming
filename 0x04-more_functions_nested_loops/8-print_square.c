@@ -1,24 +1,27 @@
 #include "main.h"
+#include <unistd.h>
+
 /**
-* print_square - prints a square, followed by a new line;
+* print_square - prints a square, followed by a new line
 * @size: size of the square
 */
 void print_square(int size)
 {
 if (size <= 0)
 {
-_putchar('\n');
+write(1, "\n", 1);
 }
- else
+else
 {
 int i, j;
+
 for (i = 0; i < size; i++)
 {
 for (j = 0; j < size; j++)
 {
-_putchar('#');
+write(1, "#", 1);
 }
-_putchar('\n');
+write(1, "\n", 1);
 }
 }
 }
